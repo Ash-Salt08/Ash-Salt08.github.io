@@ -1,12 +1,16 @@
     body {
       background-color: #000;
-      color: #0094FF;
+      color: #fff;
       font-family: 'Press Start 2P', monospace;
       padding: 20px;
       text-align: center;
+      background-image: url('assets/bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
     }
     a {
-      color: #0094FF;
+      color: #fff;
       text-decoration: none;
     }
     a:hover {
@@ -15,7 +19,7 @@
     hr {
         border: none;
         height: 5px;
-        background-color: #0094FF;
+        background-color: #fff;
     }
     ul {
     list-style-type: none;
