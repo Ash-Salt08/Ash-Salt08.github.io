@@ -1,6 +1,6 @@
 # Ash's Web Space
 
-This is my personal website hosted on GitHub Pages, somewhat inspired by old 90s websites and such.
+This is my personal website hosted on GitHub Pages, inspired by old 90s websites and such.
 Have a look at **https://ash-salt08.github.io/**.
 
 ## Tech Stack
@@ -11,7 +11,7 @@ Have a look at **https://ash-salt08.github.io/**.
 
 ## Why?
 
-Because the web used to be personal, chaotic, and fun—and I want that energy back. This is way cooler and way more fun than just setting up a social media profile. If you're reading this, I encourage you to start a similar project too!
+Because the web used to be personal, chaotic, and fun. I want that energy back. This is way cooler and way more fun than just setting up a social media profile. If you're reading this, I encourage you to start a similar project too!
 
 ## Features
 
