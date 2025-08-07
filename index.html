@@ -16,14 +16,14 @@
     <h2>🗒️ Latest Rants 🗒️</h2>
     <ul id="toc">Loading...</ul>
     <script>
-    fetch('posts/posts.json')
+    fetch('posts/posts.json') // I haven't the faintest clue how anything between the <script> tags work. Chat GPT my beloved.
     .then(response => {
       if (!response.ok) throw new Error("Couldn't load post index.");
       return response.json();
     })
     .then(posts => {
       const toc = document.getElementById('toc');
-      toc.innerHTML = ''; // clear "Loading..."
+      toc.innerHTML = '';
       posts.forEach(post => {
         const li = document.createElement('li');
         li.innerHTML = `<a href="${post.file}">${post.title}</a>`;
