@@ -9,6 +9,15 @@ body {
   background-position: center;
   background-attachment: fixed;
   font-size: 20px;
+  animation: fadeIn 1.5s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 h1,
 h2,
@@ -17,6 +26,7 @@ h4,
 h5,
 h6 {
   font-family: "Press Start 2P", monospace;
+  text-shadow: 0 0 8px blue, 0 0 16px blue;
 }
 a {
   color: #fff;
@@ -33,4 +43,21 @@ hr {
 ul {
   list-style-type: none;
   padding-left: 0;
+}
+#toc a {
+  display: inline-block;
+  padding: 6px 18px;
+  margin: 6px 0;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "Press Start 2P", monospace;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+#toc a:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 12px #fff;
+  text-shadow: none;
 }
