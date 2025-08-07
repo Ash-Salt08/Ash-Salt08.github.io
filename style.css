@@ -160,3 +160,12 @@ body::after {
   );
   z-index: 1;
 }
+.blinker {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
