@@ -8,16 +8,40 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1>🌏WELCOME TO ASH'S WEB SPACE🌏</h1>
+    <h1>🌏 WELCOME TO ASH'S WEB SPACE 🌏</h1>
     <p>Hey guys! This is my website. I'm not sure what I'm going to do with this, but expect it to be cool, nerdy, janky, or all 3.</p>
     <hr>
-    <marquee>💥 This site is best viewed on a PC 💥</marquee>
+    <marquee>🏗️ WORK IN PROGRESS 🏗️</marquee>
     <hr>
-    <p>🏗️WORK IN PROGRESS🏗️</p>
-    <div class="music-corner">
+    <h2>🗒️ Latest Rants 🗒️</h2>
+    <ul id="toc">Loading...</ul>
+    <script>
+    fetch('posts/posts.json')
+    .then(response => {
+      if (!response.ok) throw new Error("Couldn't load post index.");
+      return response.json();
+    })
+    .then(posts => {
+      const toc = document.getElementById('toc');
+      toc.innerHTML = ''; // clear "Loading..."
+      posts.forEach(post => {
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${post.file}">${post.title}</a>`;
+        toc.appendChild(li);
+      });
+    })
+    .catch(err => {
+      document.getElementById('toc').innerText = "Couldn't load posts.";
+      console.error(err);
+    });
+    </script>
+    <hr>
+    <h2>🎵 MUSIC 🎵</h2>
     <audio controls>
     <source src="assets/music.mp3" type="audio/mpeg">
     </audio>
-    </div>
+    <p>A song I made in Bandlab with little to no actual music knowledge! I would make it autoplay but I don't want people to hate the site lol.</p>
+    <hr>
+
 </body>
 </html>
