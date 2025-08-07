@@ -26,7 +26,7 @@ h4,
 h5,
 h6 {
   font-family: "Press Start 2P", monospace;
-  text-shadow: 0 0 8px blue, 0 0 16px blue;
+  text-shadow: 0 0 8px #fff, 0 0 16px #fff;
 }
 a {
   color: #fff;
