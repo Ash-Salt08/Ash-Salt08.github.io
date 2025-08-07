@@ -61,3 +61,27 @@ ul {
   box-shadow: 0 0 12px #fff;
   text-shadow: none;
 }
+.about-link {
+  display: inline-block;
+  padding: 10px 28px;
+  margin: 16px 0;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: "Press Start 2P", monospace;
+  font-size: 1em;
+  font-weight: bold;
+  box-shadow: 0 0 12px #fff;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    box-shadow 0.2s,
+    transform 0.15s;
+}
+.about-link:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 24px #fff;
+  transform: scale(1.05);
+}
