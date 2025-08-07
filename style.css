@@ -10,6 +10,8 @@ body {
   background-attachment: fixed;
   font-size: 20px;
   animation: fadeIn 1.5s ease;
+  position: relative;
+  z-index: 1;
 }
 @keyframes fadeIn {
   from {
@@ -27,6 +29,45 @@ h5,
 h6 {
   font-family: "Press Start 2P", monospace;
   text-shadow: 0 0 8px #fff, 0 0 16px #fff;
+  animation: flicker 6s infinite;
+}
+@keyframes flicker {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 8px #fff, 0 0 16px #fff;
+  }
+  5% {
+    opacity: 0.9;
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff;
+  }
+  10% {
+    opacity: 0.95;
+    text-shadow: 0 0 6px #fff, 0 0 10px #fff;
+  }
+  15% {
+    opacity: 0.85;
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff;
+  }
+  25% {
+    opacity: 1;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+  }
+  40% {
+    opacity: 0.9;
+    text-shadow: 0 0 3px #fff, 0 0 6px #fff;
+  }
+  60% {
+    opacity: 0.95;
+    text-shadow: 0 0 6px #fff, 0 0 10px #fff;
+  }
+  75% {
+    opacity: 0.85;
+    text-shadow: 0 0 4px #fff, 0 0 8px #fff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 8px #fff, 0 0 16px #fff;
+  }
 }
 a {
   color: #fff;
@@ -73,15 +114,37 @@ ul {
   font-size: 1em;
   font-weight: bold;
   box-shadow: 0 0 12px #fff;
-  transition:
-    background 0.2s,
-    color 0.2s,
-    box-shadow 0.2s,
-    transform 0.15s;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.15s;
 }
 .about-link:hover {
   background: #fff;
   color: #000;
   box-shadow: 0 0 24px #fff;
   transform: scale(1.05);
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.08) 2px,
+    transparent 2px,
+    transparent 4px
+  );
+  animation: scanlines 1s linear infinite;
+  z-index: 0;
+}
+@keyframes scanlines {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 2px;
+  }
 }
