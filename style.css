@@ -1,13 +1,16 @@
     body {
       background-color: #000;
       color: #fff;
-      font-family: 'Press Start 2P', monospace;
+      font-family: Arial, sans-serif;
       padding: 20px;
       text-align: center;
       background-image: url('assets/bg.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Press Start 2P', monospace;
     }
     a {
       color: #fff;
