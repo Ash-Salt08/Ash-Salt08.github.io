@@ -138,8 +138,7 @@ body::before {
     transparent 4px
   );
   animation: scanlines 1s linear infinite;
-  z-index: 0;
-}
+  z-index: 9999; 
 @keyframes scanlines {
   from {
     background-position: 0 0;
@@ -158,7 +157,7 @@ body::after {
     rgba(0, 255, 128, 0.04) 0%,
     rgba(0, 0, 0, 0.4) 100%
   );
-  z-index: 1;
+  z-index: 10000;
 }
 .blinker {
   animation: blink 1s step-start infinite;
