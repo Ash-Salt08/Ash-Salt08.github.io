@@ -5,3 +5,10 @@ body {
     "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+#wrapper {
+  widows: 80%;
+  margin-right: 75%;
+  margin-left: auto;
+  background-color: azure;
+  color: black;
+}
