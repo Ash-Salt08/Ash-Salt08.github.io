@@ -1,1 +1,0 @@
-V_mph=100.00, Thrust_N=20000.00, Pitch_deg=5.00, Drag_N=20000.037925, Lift_N=0.000500, thrustOK=0, pitchOK=1, liftOK=0, S=0, U=1, P=1, R=0, stall=0
