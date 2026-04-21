@@ -1,0 +1,27 @@
+.main {
+  margin-left: 180px; /*This must be the same as the sidebar width*/
+  background-color: antiquewhite;
+  padding: 2%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 180px; /*This width*/
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: darkslategrey;
+  overflow-x: hidden;
+  padding-top: 5px;
+  font-size: larger;
+}
+.sidebar a:link {
+  color: aliceblue;
+}
+.sidebar a:visited {
+  color: aliceblue;
+}
+.sidebar a:hover {
+  color: aquamarine;
+}
