@@ -1,27 +1,90 @@
 .main {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #020202;
+  background-color: #ebebeb;
   margin-left: 180px; /*This must be the same as the sidebar width*/
-  background-color: antiquewhite;
   padding: 2%;
 }
 
-.sidebar {
+.headermain {
+  /*Styling for the header for the main page*/
+  margin-left: 180px; /*This must be the same as the sidebar width*/
+  padding: 5px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #020202;
+  background-color: #858ae3;
+}
+
+.header {
+  /*Styling for every other header*/
+  padding: 5px;
+  text-align: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #020202;
+  background-color: #858ae3;
+}
+
+.footer {
+  margin-left: 180px; /*This must be the same as the sidebar width*/
+  padding: 5px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #020202;
+  background-color: #858ae3;
+}
+
+.sidebarmain {
+  /*Styling for the sidebar for the main page*/
   height: 100%;
-  width: 180px; /*This width*/
+  width: 180px; /*This is the sidebar width*/
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: darkslategrey;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #020202;
+  background-color: #613dc1;
+  overflow-x: hidden;
+  padding-top: 5px;
+  font-size: larger;
+}
+.sidebarmain a:link {
+  color: #ebebeb;
+  text-decoration: none;
+}
+.sidebarmain a:visited {
+  color: #ebebeb;
+}
+.sidebarmain a:hover {
+  color: #858ae3;
+  text-shadow: 2px 2px 5px #020202;
+}
+
+.sidebar {
+  /*Styling for every other sidebar*/
+  height: 100%;
+  width: 180px; /*This is the sidebar width*/
+  left: 0;
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #020202;
+  background-color: #613dc1;
   overflow-x: hidden;
   padding-top: 5px;
   font-size: larger;
 }
 .sidebar a:link {
-  color: aliceblue;
+  color: #ebebeb;
+  text-decoration: none;
 }
 .sidebar a:visited {
-  color: aliceblue;
+  color: #ebebeb;
 }
 .sidebar a:hover {
-  color: aquamarine;
+  color: #858ae3;
+  text-shadow: 2px 2px 5px #020202;
 }
