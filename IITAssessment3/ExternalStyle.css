@@ -88,3 +88,33 @@
   color: #858ae3;
   text-shadow: 2px 2px 5px #020202;
 }
+
+/*Styling for all parts of the contact form*/
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type="submit"] {
+  background-color: #ebebeb;
+  color: #020202;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #613dc1;
+}
+
+.container {
+  background-color: #ebebeb;
+  padding: 20px;
+  margin-left: 180px;
+  font-family: Arial, Helvetica, sans-serif;
+}

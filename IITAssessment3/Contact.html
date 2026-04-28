@@ -1,28 +1,75 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Choice2</title>
+    <title>Contact</title>
     <link rel="stylesheet" href="ExternalStyle.css" />
     <meta charset="utf-8" />
   </head>
   <body>
     <div class="header">
-      <h1>Header</h1>
-      <p>Hello hi</p>
+      <h1>Contact</h1>
+      <p>Get in touch!</p>
     </div>
     <div class="sidebar">
-      <img src="club-logo.png" alt="Club logo" />
+      <img
+        src="WWLVlogo.png"
+        alt="logo"
+        height="160"
+        width="160"
+        style="padding: 10px"
+      />
       <nav>
         <ul style="list-style-type: none">
           <li><a href="Main.html">Home</a></li>
           <li><a href="MetaPage.html">Meta</a></li>
           <li><a href="References.html">References</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li><a href="YourChoice1.html">My Collection</a></li>
         </ul>
       </nav>
     </div>
-    <div class="main"></div>
+    <div class="container">
+      <form>
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+        />
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          style="height: 200px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
     <div class="footer">
-      <p>Footer</p>
+      <p>
+        This website has been prepared by Ashton Salter (u3317736) for
+        Assessment 3: HTML website design
+      </p>
     </div>
   </body>
 </html>
